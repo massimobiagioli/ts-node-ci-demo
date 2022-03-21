@@ -23,5 +23,11 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        sh 'sudo systemctl restart node-demo.service'
+      }
+    }
+
   }
 }
