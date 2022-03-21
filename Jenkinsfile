@@ -23,11 +23,5 @@ pipeline {
       }
     }
 
-    stage('Start Server') {
-      steps {
-        sh 'yarn start:prod'
-      }
-    }
-
   }
 }
