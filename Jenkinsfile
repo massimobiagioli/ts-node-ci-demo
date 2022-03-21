@@ -23,5 +23,11 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        sh 'cp -a ./bin /opt/prod/ts-node-ci-demo'
+      }
+    }
+
   }
 }
