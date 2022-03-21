@@ -23,5 +23,11 @@ pipeline {
       }
     }
 
+    stage('Start server') {
+      steps {
+        sh 'nohup npm start &'
+      }
+    }
+
   }
 }
