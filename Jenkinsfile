@@ -25,7 +25,7 @@ pipeline {
 
     stage('Start server') {
       steps {
-        sh 'nohup npm start &'
+        sh 'nohup yarn start:prod &'
       }
     }
 
