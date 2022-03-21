@@ -23,11 +23,5 @@ pipeline {
       }
     }
 
-    stage('Start server') {
-      steps {
-        sh 'nohup yarn start:prod &'
-      }
-    }
-
   }
 }
