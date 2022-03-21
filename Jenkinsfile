@@ -16,6 +16,18 @@ pipeline {
         sh 'yarn install'
       }
     }
-     
+
+    stage('Build') {
+      steps {
+        sh 'yarn build'
+      }
+    }
+
+    stage('Start Server') {
+      steps {
+        sh 'yarn start:prod'
+      }
+    }
+
   }
 }
