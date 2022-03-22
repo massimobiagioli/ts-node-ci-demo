@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "start:dev": "nodemon src/index.ts",
-    "start:prod": "node bin/index.js"
+    "start:prod": "node bin/index.js",
+    "stop:prod": "node bin/shutdown.js"
   },
   "dependencies": {
     "@types/node": "^17.0.21",
