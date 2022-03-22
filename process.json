@@ -1,0 +1,9 @@
+{
+    "script": "bin/index.js",
+    "watch": true,
+    "ignore_watch": ["node_modules"],
+    "watch_options": {
+        "followSymlinks": false
+    },
+    "name": "ts-node-ci-demo"
+}
